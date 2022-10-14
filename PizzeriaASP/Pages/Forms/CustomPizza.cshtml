@@ -1,0 +1,60 @@
+﻿@page
+@model PizzeriaASP.Pages.Forms.CustomPizzaModel
+@{
+}
+
+<div class="text-center container">
+    <h1>Create Your Own Pizza:</h1>
+    <form method="post" class="mx-auto mt-5 mb-5 px-5 pt-5 pb-5 rounded-5 alert-light col-4">
+        <input type="text" asp-for="Pizza.PizzaName" placeholder="Give your pizza a name" /> <br />
+        
+        <label>Tomato Suace
+            <input type="checkbox" asp-for="Pizza.TomatoSauce" placeholder="Tomato Suace" />
+        </label>
+        <br />
+        <label>
+            Cheese
+            <input type="checkbox" asp-for="Pizza.Cheese" placeholder="Cheese" />
+        </label>
+        <br />
+        <label>
+            Peperoni
+            <input type="checkbox" asp-for="Pizza.Peperoni" placeholder="Peperoni" />
+        </label>
+        <br />
+        <label>
+            Mushrrom
+            <input type="checkbox" asp-for="Pizza.Mushrrom" placeholder="Mushrrom" />
+        </label>
+        <br />
+        <label>
+            Tuna
+            <input type="checkbox" asp-for="Pizza.Tuna" placeholder="Tuna" />
+        </label>
+        <br />
+        <label>
+            Pineapple
+            <input type="checkbox" asp-for="Pizza.Pineapple" placeholder="Pineapple" />
+        </label>
+        <br />
+        <label>
+            Olives
+            <input type="checkbox" asp-for="Pizza.Olives" placeholder="Olives" />
+        </label>
+        <br />
+        <label>
+            Ham
+            <input type="checkbox" asp-for="Pizza.Ham" placeholder="Ham" />
+        </label>
+        <br />
+        <label>
+            Beef
+            <input type="checkbox" asp-for="Pizza.Beef" placeholder="Beef" />
+        </label>
+        <br />
+
+
+        <br />
+        <button class="btn btn-primary mt-1" type="submit">Order My Pizza</button>
+    </form>
+</div>
